@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailCashFlow">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="207dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:text="Detail Cash Flow"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_height="1dip"
+        android:background="#CCCCCC" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+<!--        <ListView-->
+<!--            android:id="@+id/listViewItem"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:listitem="@layout/item_detail"-->
+<!--            android:scrollbars="vertical"/>-->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rv_detail_list"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:scrollbars="vertical"-->
+<!--            tools:listitem="@layout/item_detail" />-->
+        <ListView
+            android:id="@+id/listViewItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:divider="@color/purple_700"
+            android:dividerHeight="1dp"
+            tools:listitem="@layout/item_detail"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+    <View
+        android:layout_height="1dip"
+        android:background="#CCCCCC" />
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:text="Kembali" />
+    </LinearLayout>
+
+</TableLayout>
